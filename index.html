@@ -1,0 +1,66 @@
+<div style="font-family: Arial, Helvetica, sans-serif; max-width: 1200px; margin: auto; color:#fff; background-color:#000; padding:0;">
+
+  <!-- Header -->
+  <div style="background-color:#000; text-align:center; padding: 25px 0; border-bottom:2px solid #2a5298;">
+    <h1 style="font-size: 3rem; margin-bottom: 10px;">Alex V2Ray</h1>
+    <div>
+      <a href="#plans" style="color:#fff; margin:0 15px; font-weight:bold; text-decoration:none;">Plans</a>
+      <a href="#contact" style="color:#fff; margin:0 15px; font-weight:bold; text-decoration:none;">Contact</a>
+    </div>
+  </div>
+
+  <!-- Plans Section -->
+  <div id="plans" style="margin: 50px 20px;">
+    <h2 style="text-align:center; margin-bottom: 40px; color:#00bfff;">V2Ray Plans</h2>
+    <div style="display:flex; flex-wrap:wrap; gap:25px; justify-content:center;">
+      
+      <!-- Basic Plan -->
+      <div style="background:#111; border:2px solid #2a5298; border-radius:12px; padding:30px 20px; width:280px; text-align:center;">
+        <h2 style="color:#00bfff;"> Dialog Zoom Server 1</h2>
+        <p>Unlimited Bandwidth</p>
+        <input id="basicPlan" type="text" value="vless://50983bf0-9d29-4e2e-878e-de20c7d6cd1c@ms-gura.nettunnel.club:443?type=ws&path=%2F&host=MS-GURA.nettunnel.club&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=api.promotions.skype.com#SMgura-SMgura" readonly style="width:100%; padding:10px; border-radius:5px; border:none; background:#222; color:#fff; margin-bottom:10px;">
+        <button onclick="copyText('basicPlan')" style="padding:8px 15px; border:none; background-color:#00bfff; color:#000; border-radius:5px; cursor:pointer;">Copy</button>
+      </div>
+
+      <!-- Standard Plan -->
+      <div style="background:#111; border:2px solid #2a5298; border-radius:12px; padding:30px 20px; width:280px; text-align:center;">
+        <h2 style="color:#00bfff;">Dialog Zoom Server 2</h2>
+        <p>Unlimited Bandwidth</p>
+        <input id="standardPlan" type="text" value="vless://50983bf0-9d29-4e2e-878e-de20c7d6cd1c@ms-gura.nettunnel.club:443?type=ws&path=%2F&host=MS-GURA.nettunnel.club&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=api.promotions.skype.com#SMgura-SMgura" readonly style="width:100%; padding:10px; border-radius:5px; border:none; background:#222; color:#fff; margin-bottom:10px;">
+        <button onclick="copyText('standardPlan')" style="padding:8px 15px; border:none; background-color:#00bfff; color:#000; border-radius:5px; cursor:pointer;">Copy</button>
+      </div>
+
+      <!-- Premium Plan -->
+      <div style="background:#111; border:2px solid #2a5298; border-radius:12px; padding:30px 20px; width:280px; text-align:center;">
+        <h2 style="color:#00bfff;">Dialog Zoom Server 3</h2>
+        <p>High-Speed Servers</p>
+        <input id="premiumPlan" type="text" value="vless://50983bf0-9d29-4e2e-878e-de20c7d6cd1c@ms-gura.nettunnel.club:443?type=ws&path=%2F&host=MS-GURA.nettunnel.club&security=tls&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&allowInsecure=1&sni=api.promotions.skype.com#SMgura-SMgura" readonly style="width:100%; padding:10px; border-radius:5px; border:none; background:#222; color:#fff; margin-bottom:10px;">
+        <button onclick="copyText('premiumPlan')" style="padding:8px 15px; border:none; background-color:#00bfff; color:#000; border-radius:5px; cursor:pointer;">Copy</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" style="margin-top:80px; text-align:center;">
+    <h2 style="color:#00bfff; margin-bottom:20px;">Contact Us</h2>
+    <p>Email: Sahanmanujaya07@gmail.com</p>
+    <p>Telegram: <a href="https://t.me/SMgura" target="_blank" style="color:#00bfff; text-decoration:none;">@SMGura</a></p>
+  </div>
+
+  <!-- Footer -->
+  <div style="background:#000; text-align:center; padding:25px 0; margin-top:60px; border-top:2px solid #2a5298;">
+    &copy; 2025 Alex V2Ray. All rights reserved.
+  </div>
+
+</div>
+
+<!-- Copy Function Script -->
+<script>
+  function copyText(inputId) {
+    const input = document.getElementById(inputId);
+    navigator.clipboard.writeText(input.value).then(() => {
+      alert("Copied to clipboard!");
+    });
+  }
+</script>
